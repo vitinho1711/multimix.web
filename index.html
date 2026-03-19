@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MultMix Distribuidora | Conectando a Indústria ao Varejo</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "primary-container": "#0a2540",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#192900",
+                        "primary": "#000f22",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#091200",
+                        "on-primary-fixed-variant": "#314865",
+                        "secondary": "#545f72",
+                        "on-primary-container": "#768dad",
+                        "secondary-fixed-dim": "#bcc7dd",
+                        "on-secondary-fixed": "#111c2c",
+                        "primary-fixed": "#d2e4ff",
+                        "on-tertiary-container": "#689a00",
+                        "on-background": "#1b1b22",
+                        "on-surface": "#1b1b22",
+                        "inverse-on-surface": "#f2effa",
+                        "background": "#fbf8ff",
+                        "on-surface-variant": "#43474d",
+                        "surface-container-highest": "#e3e1ec",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#fbf8ff",
+                        "surface": "#fbf8ff",
+                        "outline": "#74777e",
+                        "inverse-surface": "#303038",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#d8e3fa",
+                        "inverse-primary": "#b0c8eb",
+                        "surface-container": "#efecf7",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#b3f741",
+                        "on-tertiary": "#ffffff",
+                        "surface-tint": "#49607e",
+                        "surface-dim": "#dbd9e3",
+                        "secondary-container": "#d5e0f7",
+                        "on-tertiary-fixed-variant": "#334f00",
+                        "on-tertiary-fixed": "#121f00",
+                        "on-primary-fixed": "#001c37",
+                        "surface-container-low": "#f5f2fd",
+                        "outline-variant": "#c4c6ce",
+                        "tertiary-fixed-dim": "#98d920",
+                        "surface-variant": "#e3e1ec",
+                        "surface-container-high": "#e9e7f1",
+                        "on-secondary-container": "#586377",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed-dim": "#b0c8eb"
+                    },
+                    fontFamily: {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Work Sans"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .bg-hero-gradient {
+            background: linear-gradient(to right, rgba(0, 15, 34, 0.95), rgba(10, 37, 64, 0.7)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl border-b border-slate-200/50 dark:border-slate-800/50 shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<a href="index.html" class="flex items-center shrink-0"><img src="logo.png" alt="MultMix Distribuidora" class="h-12 md:h-14 w-auto object-contain"></a>
+<div class="hidden md:flex items-center gap-4 lg:gap-8 font-sans tracking-tight font-medium text-sm flex-wrap">
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="index.html">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="sobre.html">Sobre</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="categorias.html">Categorias</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="marcas_parceiras.html">Parceiros</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="logistica.html">Logística</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="contato.html">Contato</a>
+</div>
+<a href="trabalhe_conosco.html" class="bg-tertiary-fixed text-on-tertiary-fixed px-6 py-2.5 text-sm font-bold rounded-sm hover:opacity-90 transition-all active:scale-[0.99] ml-4 shrink-0 overflow-hidden text-center">Trabalhe Conosco</a>
+</div>
+</nav>
+<!-- Section 1: Hero -->
+<header class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-hero-gradient" data-alt="Modern high-scale logistics warehouse interior with racking system">
+<div class="max-w-screen-2xl mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-tertiary-fixed/10 border border-tertiary-fixed/20 rounded-full">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed animate-pulse"></span>
+<span class="text-tertiary-fixed text-xs font-bold tracking-widest uppercase font-label">Liderança em Distribuição</span>
+</div>
+<h1 class="text-white text-5xl md:text-7xl font-black tracking-tighter leading-[1.1]">
+                    Conectando a <span class="text-tertiary-fixed">Indústria</span> ao Varejo com Excelência
+                </h1>
+<p class="text-on-primary-container text-lg md:text-xl max-w-xl font-medium leading-relaxed">
+                    A MultMix é o elo estratégico para o crescimento do seu negócio em Minas Gerais, unindo marcas globais a uma logística de precisão industrial.
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-tertiary-fixed text-on-tertiary-fixed px-8 py-4 font-bold text-sm uppercase tracking-widest rounded-sm hover:scale-105 transition-transform">
+                        Falar com Comercial
+                    </button>
+<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 font-bold text-sm uppercase tracking-widest rounded-sm hover:bg-white/20 transition-all">
+                        Ver Produtos
+                    </button>
+</div>
+</div>
+<!-- Metric Cards Overlapping -->
+<div class="hidden lg:grid grid-cols-2 gap-6 items-start translate-x-12">
+<div class="bg-white/5 backdrop-blur-xl p-8 border border-white/10 rounded-sm mt-12">
+<span class="material-symbols-outlined text-tertiary-fixed text-4xl mb-4" data-icon="rocket_launch">rocket_launch</span>
+<h3 class="text-white text-3xl font-black mb-1">24h</h3>
+<p class="text-slate-400 text-sm font-label uppercase tracking-tighter">Prazo de Entrega</p>
+</div>
+<div class="bg-tertiary-fixed p-8 rounded-sm">
+<span class="material-symbols-outlined text-on-tertiary-fixed text-4xl mb-4" data-icon="inventory_2" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+<h3 class="text-on-tertiary-fixed text-3xl font-black mb-1">98%</h3>
+<p class="text-on-tertiary-fixed/70 text-sm font-label uppercase tracking-tighter">Nível de Serviço</p>
+</div>
+</div>
+</div>
+</header>
+<!-- Section 2: Credibility Belt -->
+<section class="bg-primary py-16">
+<div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+<div class="group">
+<div class="text-tertiary-fixed text-4xl md:text-5xl font-black mb-2">+130</div>
+<div class="text-slate-400 text-xs font-label uppercase tracking-widest">Profissionais</div>
+</div>
+<div class="group">
+<div class="text-tertiary-fixed text-4xl md:text-5xl font-black mb-2">+16k m²</div>
+<div class="text-slate-400 text-xs font-label uppercase tracking-widest">Área Logística</div>
+</div>
+<div class="group">
+<div class="text-tertiary-fixed text-4xl md:text-5xl font-black mb-2">+2k</div>
+<div class="text-slate-400 text-xs font-label uppercase tracking-widest">SKUs Ativos</div>
+</div>
+<div class="group">
+<div class="text-tertiary-fixed text-4xl md:text-5xl font-black mb-2">+4k</div>
+<div class="text-slate-400 text-xs font-label uppercase tracking-widest">Clientes Atendidos</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Institutional 'Quem é a MultMix' -->
+<section class="py-32 bg-surface" id="sobre">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<div class="aspect-[4/5] bg-surface-container-high rounded-sm overflow-hidden">
+<img alt="Warehouse operations" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Internal warehouse operational area with team" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmOQUifOJGEuqzFIMtbB8gkoLVeRbANKd7GjuGm9fH1A-B_1255tGsrpAWP8O1oxiXgVK1Ww0tOHIzC8rw14KycBf24O4IcSUReN5npS8NvcJ0YT_NlzTTLg5SQJKJi4s2-ujpnD2FaiTdFeUakX2WpT18fYSgcjHoKEXadt7KVRYavS13FQjobAQdh1T2Ri3vtEj8s5Qr2i8utWtYIJu8eQmL8kL2Bb2JQt6v5AF7dmVsGBhtubYD0H6PByvXqLdnmdPMjOF28mQ"/>
+</div>
+<div class="absolute -bottom-8 -right-8 bg-tertiary-fixed p-12 hidden md:block">
+<span class="text-on-tertiary-fixed text-6xl font-black block">20+</span>
+<span class="text-on-tertiary-fixed text-sm font-label font-bold uppercase tracking-widest">Anos de Mercado</span>
+</div>
+</div>
+<div class="space-y-8">
+<h2 class="text-primary text-4xl md:text-5xl font-black tracking-tighter leading-tight">
+                        Compromisso com o Sucesso do <br/><span class="text-secondary-container bg-primary-container px-2">Varejista Mineiro</span>
+</h2>
+<div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+<p>A MultMix Distribuidora nasceu com a missão de transformar o cenário logístico mineiro, oferecendo mais do que produtos: entregamos inteligência comercial e confiança.</p>
+<p>Atuamos como um braço estratégico para as indústrias, garantindo que seus produtos cheguem às prateleiras com agilidade e integridade, enquanto proporcionamos aos varejistas um mix completo e condições competitivas.</p>
+<p>Nossa cultura é pautada na transparência e no fortalecimento das relações de longo prazo, acreditando que o crescimento sustentável só acontece através da parceria real.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Nossa Estrutura -->
+<section class="py-32 bg-surface-container-low" id="estrutura">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="mb-20 text-center max-w-3xl mx-auto">
+<span class="text-tertiary-fixed-variant text-sm font-label font-bold uppercase tracking-[0.2em] mb-4 block">Infraestrutura de Ponta</span>
+<h2 class="text-primary text-4xl font-black tracking-tight">Capacidade Operacional em Larga Escala</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-lowest p-10 space-y-6 hover:shadow-2xl hover:shadow-primary/5 transition-all group">
+<div class="w-14 h-14 bg-primary text-tertiary-fixed flex items-center justify-center rounded-sm group-hover:bg-tertiary-fixed group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-3xl" data-icon="warehouse">warehouse</span>
+</div>
+<h3 class="text-2xl font-bold text-primary">Estocagem Inteligente</h3>
+<p class="text-on-surface-variant font-medium">Sistemas de WMS avançados para gestão em tempo real de mais de 2.000 SKUs.</p>
+</div>
+<div class="bg-surface-container-lowest p-10 space-y-6 hover:shadow-2xl hover:shadow-primary/5 transition-all group">
+<div class="w-14 h-14 bg-primary text-tertiary-fixed flex items-center justify-center rounded-sm group-hover:bg-tertiary-fixed group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-3xl" data-icon="local_shipping">local_shipping</span>
+</div>
+<h3 class="text-2xl font-bold text-primary">Frota Própria</h3>
+<p class="text-on-surface-variant font-medium">Logística capilarizada com monitoramento via satélite para entregas precisas.</p>
+</div>
+<div class="bg-surface-container-lowest p-10 space-y-6 hover:shadow-2xl hover:shadow-primary/5 transition-all group">
+<div class="w-14 h-14 bg-primary text-tertiary-fixed flex items-center justify-center rounded-sm group-hover:bg-tertiary-fixed group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-3xl" data-icon="ac_unit">ac_unit</span>
+</div>
+<h3 class="text-2xl font-bold text-primary">Cadeia de Frio</h3>
+<p class="text-on-surface-variant font-medium">Ambientes controlados para garantir a qualidade de produtos perecíveis e sensíveis.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Atuação Regional -->
+<section class="py-32 bg-primary overflow-hidden relative" id="regioes">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<img alt="Map abstract" class="w-full h-full object-cover" data-alt="Abstract blue map pattern texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAtNHZs6mI1aZ2-yI_cpSbZXcpY1O0eo9OL9zLbru_5n0HSNGMTutblKMWl4UW5Akk-fctKDr8EPvba5ulemR947YaJVBtZKhsBd9RViW8Y-VVgTtp4PsLdO1a3Fpae7vwPHMmc5PV5Q5DIBjC7YdmC5KXM7Gq5AcCq61zfGfiAZU2R8pMmvjYdtq9t_D937gorbb8foeEA7dP1Z8j-CGS7jLKEnGdwDl49ePr2hS-_5xW86WlfVurndpVG6fVBy24r-6vsZwsTVo"/>
+</div>
+<div class="max-w-screen-2xl mx-auto px-8 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="space-y-12">
+<div>
+<span class="text-tertiary-fixed text-sm font-label font-bold uppercase tracking-widest mb-4 block">Capilaridade Geográfica</span>
+<h2 class="text-white text-5xl font-black tracking-tighter leading-tight">Presença Forte em <br/>Toda Minas Gerais</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="border-l-2 border-tertiary-fixed pl-6 py-2">
+<h4 class="text-white font-bold text-xl mb-1">Grande BH</h4>
+<p class="text-slate-400 text-sm">Foco metropolitano intenso.</p>
+</div>
+<div class="border-l-2 border-slate-700 pl-6 py-2">
+<h4 class="text-white font-bold text-xl mb-1">Zona da Mata</h4>
+<p class="text-slate-400 text-sm">Expansão e logística eficiente.</p>
+</div>
+<div class="border-l-2 border-slate-700 pl-6 py-2">
+<h4 class="text-white font-bold text-xl mb-1">Vale do Aço</h4>
+<p class="text-slate-400 text-sm">Atendimento industrial e varejo.</p>
+</div>
+<div class="border-l-2 border-slate-700 pl-6 py-2">
+<h4 class="text-white font-bold text-xl mb-1">Sul de Minas</h4>
+<p class="text-slate-400 text-sm">Conectividade e rapidez.</p>
+</div>
+<div class="border-l-2 border-slate-700 pl-6 py-2">
+<h4 class="text-white font-bold text-xl mb-1">Campos das Vertentes</h4>
+<p class="text-slate-400 text-sm">Tradição em abastecimento.</p>
+</div>
+<div class="border-l-2 border-slate-700 pl-6 py-2">
+<h4 class="text-white font-bold text-xl mb-1">Vale do Jequitinhonha</h4>
+<p class="text-slate-400 text-sm">Logística de longo alcance.</p>
+</div>
+</div>
+</div>
+<div class="relative flex justify-center lg:justify-end">
+<!-- Placeholder for the stylized Map of MG -->
+<div class="relative w-full max-w-lg aspect-square bg-primary-container rounded-full flex items-center justify-center p-12 shadow-2xl shadow-black/50">
+<div class="w-full h-full opacity-40 grayscale brightness-150">
+<img alt="Minas Gerais Map" class="w-full h-full object-contain" data-location="Minas Gerais" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe9-7n_CgLHv_ocAVl6WjDDuUUGx6lxq7yz5eiAqBMn5M6YQa7uhl7H6G4_l5c9Aokp3gLAXvgno6sxWUD_xtM1t0MjkRTDwqF28Ff3_5G8YSCeoEBjWXH6F2Lr2p-tRjNZxfV05uOr14zh2Y5-pgD7p5HZRCIWgsbPQqMP9PgnUJFPT1SlIfV6MQNDv-StSnL4HEZiqCI642ts6umdbv5XcdqV9fBRNwCSKa-s-BQ_eonp-8k97cETg7XJ42bjIu1-aKSIdJACD8"/>
+</div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+<div class="w-6 h-6 bg-tertiary-fixed rounded-full animate-ping mx-auto mb-2"></div>
+<span class="text-white font-bold text-sm bg-primary/80 backdrop-blur px-3 py-1 rounded-full">Sede: Contagem/MG</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Categorias de Produtos -->
+<section class="py-32 bg-surface" id="categorias">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<span class="text-tertiary-fixed-variant text-sm font-label font-bold uppercase tracking-[0.2em] mb-4 block">Catálogo Premium</span>
+<h2 class="text-primary text-4xl font-black tracking-tight">O Mix Completo para o seu Negócio</h2>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 group border-b-2 border-primary/10 hover:border-tertiary-fixed transition-all pb-1">
+                    Baixar Catálogo PDF <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="download">download</span>
+</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Alimentos -->
+<div class="group relative overflow-hidden bg-surface-container-low aspect-[4/3]">
+<img alt="Alimentos" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-90" data-alt="Selection of premium food products grocery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDDcgMACjXXzvAK-pZEl6YIsCnjosntC4YdNJqMcM0Wrv-vdEPkRbrDEPanDnqyXe8dkMVQSVg-zNV3oUtOzhSkEqEqvIF029jseU_1jjm4G3a3V0J3xxSECQqG1CbtAJ8D9s4ylH_VqfbLw56jJK71e0rZUX2h_nOn-TDZgH8927aEwfNo1CP97RieQeN1JzlNIAbQ-ApmIzw28fZIojV0iZv-PDx3FOaNf2WyHBf-nUFMiN80qOxjjRgqPwYo6WMpaHBI5jSw1U"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white text-2xl font-bold mb-2">Alimentos</h3>
+<p class="text-slate-300 text-sm font-medium">Grãos, conservas, massas e itens básicos de alta rotatividade.</p>
+</div>
+</div>
+<!-- Limpeza -->
+<div class="group relative overflow-hidden bg-surface-container-low aspect-[4/3]">
+<img alt="Limpeza" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-90" data-alt="Cleaning supplies and products in rows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDba4tSYFf_oPRlddOpNnrSsGRVrGPi0FDytg_kWMcTAh6PQt-ju8YyyE8Ljfa2NDqV_6T412Jl2HN9O61R1RYE8gyz7U-D-v7l3wcFUW7x_EVtFO1P-KkjAlf0bwUdYIoN0pg9P_BgzcXgX1Q62MR5GxFp6ZJ4zYYLFydTh5LfHcAbrxjdKTqFG19zZjPoo8Lma6pTUX_GLv7PLG4rA520SDrGdlSBB-kV-Kq6fIP4B-SUB2iY0Nsll8XBgCZXCe5lwq1UbQC3wpw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white text-2xl font-bold mb-2">Limpeza</h3>
+<p class="text-slate-300 text-sm font-medium">Soluções completas para higiene doméstica e profissional.</p>
+</div>
+</div>
+<!-- Higiene Pessoal -->
+<div class="group relative overflow-hidden bg-surface-container-low aspect-[4/3]">
+<img alt="Higiene Pessoal" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-90" data-alt="Personal care and hygiene items aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-SA8cVX06TR_e2Xe9AHdm_l_u6_vW-cUU8Y3KmX7o-KqQe_sk1yYLxcs2-6HI1v6Y0cUH2iENSeKDEvaBYVfi6bmaAf4k5y-s_BNFiamv2xQj9jej5DC198tZCM0o4wp_dBDB7kvzCY_MvjagsHVvibwGcK-U19bj2LZJRvnF55oVlBf5uv0UBq_ub07_nRghdNFt0Gl-16gIa1Issrirazd7nOk_ZT3enChKqu689LjZkEYiCxfc7A-OwWpX5Dv9RvC7sToa5nU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white text-2xl font-bold mb-2">Higiene Pessoal</h3>
+<p class="text-slate-300 text-sm font-medium">Marcas líderes em perfumaria, cuidados corporais e beleza.</p>
+</div>
+</div>
+<!-- Bomboniere -->
+<div class="group relative overflow-hidden bg-surface-container-low aspect-[4/3]">
+<img alt="Bomboniere" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-90" data-alt="Assorted colorful candies and chocolates display" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2vIB-ipEFeEarU-CmA0PD5vV7fI7KVkBG7-ENyAVo4IM5kWI1-2pMbPVr6MYXcDED4X1kgX2C97XL8h4rCzwHmRLRyFdMoaLdFCFrgVdmvcefFi5vehawo-dvHbKiN2nCG5GFJWVQJ-jx3CzT0Z68_-if6d-mvA8clMvjFqb-TflS-OPcEXlukzc6KvmdqV-i07zJhB0Q3u4GP5qwpyGYGiQWPcRt1SNtPNIjHjzsYgwDbcTL4dP0JFM4UyyE-8dSESvSZ8qkYbo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white text-2xl font-bold mb-2">Bomboniere</h3>
+<p class="text-slate-300 text-sm font-medium">Chocolates, balas e guloseimas para alegrar o ponto de venda.</p>
+</div>
+</div>
+<!-- Bebidas -->
+<div class="group relative overflow-hidden bg-surface-container-low aspect-[4/3]">
+<img alt="Bebidas" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-90" data-alt="Selection of beverage bottles and cans" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB52xLafkCkzCaRZAsjQkoxsZ2NpX9rz0h8a4HOuq05AqmhLqAALKsal0iP2vii3bGA-E-c2kO4tCFjXKshehnJEy7F0OGWFAdc8RHjdElTo1TL75EtByh9M7oMsCXkPZka325gMG_ci1dpeWunv5juj4qv0ixTwwrnhKZ-odO3s8skd-eYQ4ZGP04UxTFovy_vrkTsubjSZeVHmpWQOoj1m5H-7remuz2iI7cKUbqi5rYxzwyn-x6sQhRrWCeDysOGjpDWsCaSmA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white text-2xl font-bold mb-2">Bebidas</h3>
+<p class="text-slate-300 text-sm font-medium">Mix diversificado de sucos, refrigerantes e alcóolicos.</p>
+</div>
+</div>
+<!-- Utilidades -->
+<div class="group relative overflow-hidden bg-surface-container-low aspect-[4/3]">
+<img alt="Utilidades" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-90" data-alt="General houseware and utility items" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAGlagY3CqFRpEXZ7mMrS2HlfC5lshi2fEqCTAH2Bu8eBNiYVJ-tR-suVC-udOXwVDIdJkoTfjzLEyx9elcVUTw07ys4hCtUz-wPay2skmgsUX1BjF1SlJJaJUOIVGOucvfHeLCmRKUaczgGVMv9D2aUsJG_tA7EbJ1QMfOq35ouy1gsBwpUahzoQdMOhzD4GOHo6nKbGQO6YnS1YFhBOgINXc0LDMe317Tgt3o0s3scq28VntYNDpKeB2tDU1W_rB1YNPQK0ae9o"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white text-2xl font-bold mb-2">Utilidades/Bazar</h3>
+</section>
+<!-- Section 7: Marcas Parceiras (Carousel Simulation) -->
+<section class="py-32 bg-slate-50 border-y border-slate-200/50 overflow-hidden" id="carousel-section">
+<div class="max-w-screen-2xl mx-auto px-8 mb-16 text-center">
+    <p class="text-slate-500 font-label text-sm font-bold uppercase tracking-[0.2em] mb-4">Parceiros de Confiança</p>
+    <h2 class="text-primary text-4xl font-black tracking-tight">Marcas que Distribuímos</h2>
+</div>
+<style>
+@keyframes marquee-infinite {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50% - 1.5rem)); }
+}
+.animate-marquee-infinite {
+    animation: marquee-infinite 50s linear infinite;
+}
+.brand-card {
+    background: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 15px -1px rgba(0,0,0,0.06);
+    width: 240px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 2rem;
+    transition: all 0.3s ease;
+}
+.brand-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px -5px rgba(0,0,0,0.1);
+}
+</style>
+<div class="w-full relative whitespace-nowrap overflow-hidden flex items-center select-none" style="mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);">
+    <div class="flex flex-nowrap shrink-0 items-center w-max animate-marquee-infinite hover:[animation-play-state:paused] py-10 px-4">
+        <!-- Sequence of 1-15 crops -->
+        <div class="brand-card"><img src="logo_crop_1.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_2.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_3.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_4.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_5.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_6.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_7.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_8.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_9.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_10.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_11.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_12.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_13.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_14.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_15.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <!-- Duplicated for Loop -->
+        <div class="brand-card"><img src="logo_crop_1.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_2.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_3.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_4.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_5.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_6.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_7.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_8.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_9.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_10.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_11.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_12.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_13.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_14.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+        <div class="brand-card"><img src="logo_crop_15.png" class="max-w-[80%] max-h-[75%] object-contain" alt="Logo"></div>
+    </div>
+</div>
+</section>
+<!-- Section 8: Por que escolher a MultMix? -->
+<section class="py-32 bg-surface">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+<div class="lg:sticky lg:top-32 h-fit">
+<span class="text-tertiary-fixed-variant text-sm font-label font-bold uppercase tracking-[0.2em] mb-4 block">Diferenciais Estratégicos</span>
+<h2 class="text-primary text-5xl font-black tracking-tighter leading-tight mb-8">Por que somos a <br/>escolha ideal?</h2>
+<p class="text-on-surface-variant text-lg">Unimos a robustez de um grande operador logístico à agilidade de um parceiro local que entende as dores do seu PDV.</p>
+<div class="mt-12 h-1 bg-surface-container-high w-full relative">
+<div class="absolute inset-0 bg-tertiary-fixed w-1/3"></div>
+</div>
+</div>
+<div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="space-y-4">
+<div class="text-tertiary-fixed-variant font-bold text-4xl opacity-20">01</div>
+<h4 class="text-xl font-bold text-primary">Variedade de Mix</h4>
+<p class="text-on-surface-variant">Curadoria precisa de produtos com alto giro e margem competitiva para seu varejo.</p>
+</div>
+<div class="space-y-4">
+<div class="text-tertiary-fixed-variant font-bold text-4xl opacity-20">02</div>
+<h4 class="text-xl font-bold text-primary">Estrutura Própria</h4>
+<p class="text-on-surface-variant">Controle total da operação, desde o recebimento até a entrega na sua porta.</p>
+</div>
+<div class="space-y-4">
+<div class="text-tertiary-fixed-variant font-bold text-4xl opacity-20">03</div>
+<h4 class="text-xl font-bold text-primary">Proximidade</h4>
+<p class="text-on-surface-variant">Consultores regionais dedicados que entendem a realidade demográfica da sua loja.</p>
+</div>
+<div class="space-y-4">
+<div class="text-tertiary-fixed-variant font-bold text-4xl opacity-20">04</div>
+<h4 class="text-xl font-bold text-primary">Eficiência Logística</h4>
+<p class="text-on-surface-variant">Tecnologia aplicada para reduzir tempos de entrega e eliminar erros de separação.</p>
+</div>
+<div class="space-y-4">
+<div class="text-tertiary-fixed-variant font-bold text-4xl opacity-20">05</div>
+<h4 class="text-xl font-bold text-primary">Confiança Sólida</h4>
+<p class="text-on-surface-variant">Décadas de atuação com compliance rigoroso e respeito a prazos e contratos.</p>
+</div>
+<div class="space-y-4">
+<div class="text-tertiary-fixed-variant font-bold text-4xl opacity-20">06</div>
+<h4 class="text-xl font-bold text-primary">Ampla Cobertura</h4>
+<p class="text-on-surface-variant">Chegamos onde outros não chegam, com frequência semanal em todos os polos de MG.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 9: Como funciona nosso atendimento -->
+<section class="py-32 bg-primary-container text-white overflow-hidden">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="text-center mb-24">
+<h2 class="text-4xl md:text-5xl font-black tracking-tight mb-4">Fluxo de Excelência no Atendimento</h2>
+<p class="text-on-primary-container text-lg max-w-2xl mx-auto">Um processo desenhado para ser fluido, transparente e focado na sua necessidade imediata.</p>
+</div>
+<div class="relative">
+<div class="hidden lg:block absolute top-1/2 left-0 w-full h-px bg-white/10 -translate-y-1/2"></div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-12 relative z-10">
+<div class="text-center space-y-6">
+<div class="w-16 h-16 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center mx-auto text-2xl font-bold shadow-xl shadow-tertiary-fixed/20">1</div>
+<h5 class="font-bold text-lg">Contato Inicial</h5>
+<p class="text-on-primary-container text-sm">Via canais digitais ou visita de representante.</p>
+</div>
+<div class="text-center space-y-6">
+<div class="w-16 h-16 rounded-full bg-white/10 text-white flex items-center justify-center mx-auto text-2xl font-bold">2</div>
+<h5 class="font-bold text-lg">Entendimento</h5>
+<p class="text-on-primary-container text-sm">Análise do seu perfil de varejo e demandas específicas.</p>
+</div>
+<div class="text-center space-y-6">
+<div class="w-16 h-16 rounded-full bg-white/10 text-white flex items-center justify-center mx-auto text-2xl font-bold">3</div>
+<h5 class="font-bold text-lg">Definição do Mix</h5>
+<p class="text-on-primary-container text-sm">Seleção estratégica de categorias e volume de carga.</p>
+</div>
+<div class="text-center space-y-6">
+<div class="w-16 h-16 rounded-full bg-white/10 text-white flex items-center justify-center mx-auto text-2xl font-bold">4</div>
+<h5 class="font-bold text-lg">Abastecimento</h5>
+<p class="text-on-primary-container text-sm">Separação rigorosa e logística de entrega programada.</p>
+</div>
+<div class="text-center space-y-6">
+<div class="w-16 h-16 rounded-full bg-white/10 text-white flex items-center justify-center mx-auto text-2xl font-bold">5</div>
+<h5 class="font-bold text-lg">Relacionamento</h5>
+<p class="text-on-primary-container text-sm">Suporte contínuo e reposição inteligente de estoque.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 10: Strong CTA Section -->
+<section class="relative py-24 bg-tertiary-fixed overflow-hidden">
+<div class="max-w-screen-2xl mx-auto px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="max-w-2xl text-center md:text-left">
+<h2 class="text-on-tertiary-fixed text-4xl md:text-5xl font-black tracking-tighter leading-tight mb-4">Pronto para elevar o nível do seu abastecimento?</h2>
+<p class="text-on-tertiary-fixed/80 text-xl font-medium">Fale agora com nosso time comercial e receba uma proposta personalizada.</p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+<a class="flex items-center justify-center gap-3 bg-on-tertiary-fixed text-tertiary-fixed px-10 py-5 font-bold uppercase tracking-widest text-sm hover:scale-105 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="chat">chat</span> WhatsApp Comercial
+                </a>
+<a class="flex items-center justify-center gap-3 bg-tertiary-fixed text-on-tertiary-fixed border-2 border-on-tertiary-fixed px-10 py-5 font-bold uppercase tracking-widest text-sm hover:bg-on-tertiary-fixed hover:text-tertiary-fixed transition-all" href="#contato">
+                    Enviar E-mail
+                </a>
+</div>
+</div>
+<!-- Background decorative text -->
+<div class="absolute -bottom-10 -left-10 text-[12rem] font-black text-on-tertiary-fixed/5 select-none pointer-events-none uppercase">MultMix</div>
+</section>
+<!-- Section 11: Complete Contact Section -->
+<section class="py-32 bg-surface" id="contato">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24">
+<div class="space-y-12">
+<div>
+<span class="text-tertiary-fixed-variant text-sm font-label font-bold uppercase tracking-[0.2em] mb-4 block">Canais de Atendimento</span>
+<h2 class="text-primary text-4xl font-black tracking-tight mb-8">Estamos à disposição para ouvir você</h2>
+</div>
+<div class="space-y-8">
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 bg-primary-container text-tertiary-fixed flex items-center justify-center rounded-sm shrink-0">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+</div>
+<div>
+<h5 class="text-primary font-bold text-lg">Telefone Central</h5>
+<p class="text-on-surface-variant font-medium">+55 31 3361-5032</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 bg-primary-container text-tertiary-fixed flex items-center justify-center rounded-sm shrink-0">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</div>
+<div>
+<h5 class="text-primary font-bold text-lg">E-mail Comercial</h5>
+<p class="text-on-surface-variant font-medium">recepcao@comercialmultmix.com.br</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 bg-primary-container text-tertiary-fixed flex items-center justify-center rounded-sm shrink-0">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</div>
+<div>
+<h5 class="text-primary font-bold text-lg">Endereço</h5>
+<p class="text-on-surface-variant font-medium">Rua Exemplo Logístico, 1000 - Contagem, MG</p>
+</div>
+</div>
+</div>
+<div class="aspect-video bg-surface-container-high rounded-sm overflow-hidden grayscale border border-outline-variant/30 shadow-lg">
+<!-- Mock Map -->
+<div class="w-full h-full bg-slate-200 flex items-center justify-center text-slate-400">
+<span class="material-symbols-outlined text-6xl" data-icon="map">map</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-10 md:p-16 rounded-sm">
+<h3 class="text-primary text-3xl font-bold mb-8">Envie uma Mensagem</h3>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-label font-bold uppercase text-on-surface-variant">Nome Completo</label>
+<input class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant/30 focus:border-tertiary-fixed focus:ring-0 px-4 py-3 transition-colors" placeholder="Ex: João Silva" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-label font-bold uppercase text-on-surface-variant">E-mail Corporativo</label>
+<input class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant/30 focus:border-tertiary-fixed focus:ring-0 px-4 py-3 transition-colors" placeholder="email@empresa.com.br" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-label font-bold uppercase text-on-surface-variant">Assunto</label>
+<select class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant/30 focus:border-tertiary-fixed focus:ring-0 px-4 py-3 transition-colors">
+<option>Quero ser um cliente</option>
+<option>Quero ser um fornecedor</option>
+<option>Dúvidas e Outros</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-label font-bold uppercase text-on-surface-variant">Mensagem</label>
+<textarea class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant/30 focus:border-tertiary-fixed focus:ring-0 px-4 py-3 transition-colors" placeholder="Como podemos ajudar seu negócio hoje?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-white py-5 font-bold uppercase tracking-widest text-sm hover:bg-primary-container transition-all active:scale-[0.98]">
+                            Enviar Solicitação
+                        </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 12: Premium Footer -->
+<footer class="bg-slate-950 dark:bg-black w-full pt-24 pb-12 border-t border-white/5">
+<div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
+<div class="col-span-1 lg:col-span-1">
+<div class="text-3xl font-black text-white uppercase tracking-tighter mb-8">MultMix</div>
+<p class="text-slate-400 text-sm leading-relaxed mb-8">Excelência em distribuição e logística integrada em Minas Gerais. Conectando marcas de sucesso ao varejo que mais cresce no Brasil.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-white hover:bg-tertiary-fixed hover:text-on-tertiary-fixed transition-all" href="#"><span class="material-symbols-outlined text-lg" data-icon="share">share</span></a>
+<a class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-white hover:bg-tertiary-fixed hover:text-on-tertiary-fixed transition-all" href="#"><span class="material-symbols-outlined text-lg" data-icon="group">group</span></a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-bold mb-8 uppercase tracking-widest text-xs">Categorias</h4>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li><a class="hover:text-tertiary-fixed transition-colors" href="#">Alimentos &amp; Grãos</a></li>
+<li><a class="hover:text-tertiary-fixed transition-colors" href="#">Higiene &amp; Perfumaria</a></li>
+<li><a class="hover:text-tertiary-fixed transition-colors" href="#">Limpeza Profissional</a></li>
+<li><a class="hover:text-tertiary-fixed transition-colors" href="#">Bazar &amp; Utilidades</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-8 uppercase tracking-widest text-xs">Regiões Atendidas</h4>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li><a class="hover:text-tertiary-fixed transition-colors" href="#">Região Metropolitana (BH)</a></li>
+<li><a class="hover:text-tertiary-fixed transition-colors" href="#">Triângulo &amp; Alto Paranaíba</a></li>
+<li><a class="hover:text-tertiary-fixed transition-colors" href="#">Norte de Minas</a></li>
+<li><a class="hover:text-tertiary-fixed transition-colors" href="#">Leste de Minas</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-8 uppercase tracking-widest text-xs">Acesso Rápido</h4>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li><a class="hover:text-tertiary-fixed transition-colors" href="#">Trabalhe Conosco</a></li>
+<li><a class="hover:text-tertiary-fixed transition-colors" href="#">Compliance e Ética</a></li>
+<li><a class="hover:text-tertiary-fixed transition-colors" href="#">Portal do Fornecedor</a></li>
+<li><a class="hover:text-tertiary-fixed transition-colors" href="#">Privacidade</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto px-8 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-500 text-xs font-label">
+<p>© 2024 MultMix Distribuidora. Todos os direitos reservados.</p>
+<div class="flex gap-8">
+<a class="hover:text-white transition-colors" href="#">Privacidade</a>
+<a class="hover:text-white transition-colors" href="#">Termos de Uso</a>
+<a class="hover:text-white transition-colors" href="#">Compliance</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar / WhatsApp Floating -->
+<div class="fixed bottom-8 right-8 z-50 flex items-center justify-center">
+<a class="bg-green-600 p-4 rounded-full flex items-center justify-center text-white shadow-2xl shadow-green-500/20 hover:scale-110 hover:bg-green-500 transition-transform duration-300 group" href="https://wa.me/5531991297303" target="_blank">
+<span class="material-symbols-outlined text-3xl" data-icon="chat">chat</span>
+<span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs group-hover:ml-3 transition-all duration-500 font-bold uppercase tracking-widest text-xs">WhatsApp</span>
+</a>
+</div>
+</body></html>
+
+
+
+
+
+

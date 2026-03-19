@@ -1,0 +1,356 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Logística e Frota | MultMix Distribuidora</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Work+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#98d920",
+              "on-surface-variant": "#43474d",
+              "on-secondary-fixed-variant": "#3c475a",
+              "inverse-surface": "#303038",
+              "inverse-primary": "#b0c8eb",
+              "secondary-container": "#d5e0f7",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-container": "#192900",
+              "on-secondary-fixed": "#111c2c",
+              "tertiary-fixed": "#b3f741",
+              "on-secondary": "#ffffff",
+              "surface-bright": "#fbf8ff",
+              "surface": "#fbf8ff",
+              "surface-container-highest": "#e3e1ec",
+              "secondary": "#545f72",
+              "surface-dim": "#dbd9e3",
+              "on-tertiary-fixed-variant": "#334f00",
+              "secondary-fixed": "#d8e3fa",
+              "outline": "#74777e",
+              "on-error": "#ffffff",
+              "surface-tint": "#49607e",
+              "primary": "#000f22",
+              "error": "#ba1a1a",
+              "surface-container": "#efecf7",
+              "primary-fixed-dim": "#b0c8eb",
+              "surface-container-low": "#f5f2fd",
+              "tertiary": "#091200",
+              "on-tertiary-fixed": "#121f00",
+              "on-primary-fixed-variant": "#314865",
+              "on-secondary-container": "#586377",
+              "on-error-container": "#93000a",
+              "surface-variant": "#e3e1ec",
+              "primary-fixed": "#d2e4ff",
+              "background": "#fbf8ff",
+              "on-primary": "#ffffff",
+              "surface-container-high": "#e9e7f1",
+              "primary-container": "#0a2540",
+              "outline-variant": "#c4c6ce",
+              "on-surface": "#1b1b22",
+              "on-tertiary-container": "#689a00",
+              "secondary-fixed-dim": "#bcc7dd",
+              "on-tertiary": "#ffffff",
+              "on-primary-container": "#768dad",
+              "error-container": "#ffdad6",
+              "inverse-on-surface": "#f2effa",
+              "on-primary-fixed": "#001c37",
+              "on-background": "#1b1b22"
+            },
+            fontFamily: {
+              "headline": ["Inter", "sans-serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Work Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-effect {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl border-b border-slate-200/50 dark:border-slate-800/50 shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<a href="index.html" class="flex items-center shrink-0"><img src="logo.png" alt="MultMix Distribuidora" class="h-12 md:h-14 w-auto object-contain"></a>
+<div class="hidden md:flex items-center gap-4 lg:gap-8 font-sans tracking-tight font-medium text-sm flex-wrap">
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="index.html">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="sobre.html">Sobre</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="categorias.html">Categorias</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="marcas_parceiras.html">Parceiros</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="logistica.html">Logística</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="contato.html">Contato</a>
+</div>
+<a href="trabalhe_conosco.html" class="bg-tertiary-fixed text-on-tertiary-fixed px-6 py-2.5 text-sm font-bold rounded-sm hover:opacity-90 transition-all active:scale-[0.99] ml-4 shrink-0 overflow-hidden text-center">Trabalhe Conosco</a>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center pt-20 overflow-hidden bg-primary overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Modern logistics hub with trucks and distribution center" class="w-full h-full object-cover opacity-40 grayscale" data-alt="Modern logistics hub with trucks and distribution center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPrOPPwJNeqAxwdorUDFOWCEAyB_xySyFhpPFZtOSlD_u8pNyNzCIIkCaDzOFC6rDbXouqoZw93UXuGlYIU4bv4HyuGebjI5nF9Y62j7YRqzUo1sYc-65OYPkuLtUzCDm8jjqcXoHtNyRSm-IhJglGFQ8zqQ6gq8iMGd6o96qfqFewpNENJhNj0yEaa8qE3QmN-xAnK8l3bVB1euUbnHXXSqI1MAzx2cfIRsdb_ml1i7F-r8y4X0HSabpZJEjF8mGmlU0_gj9UEXo"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
+</div>
+<div class="container mx-auto px-12 relative z-10">
+<div class="max-w-3xl">
+<span class="inline-block px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed font-label text-xs uppercase tracking-widest mb-6">Logística de Alta Performance</span>
+<h1 class="text-white text-6xl md:text-7xl font-headline font-black tracking-tighter mb-8 leading-[0.95]">
+                    Logística Inteligente,<br/><span class="text-tertiary-fixed">Entrega Garantida</span>.
+                </h1>
+<p class="text-on-primary-container text-xl md:text-2xl font-body max-w-2xl leading-relaxed mb-10 opacity-90">
+                    Com frota própria e tecnologia de ponta, garantimos que seu estoque esteja sempre abastecido com agilidade e segurança em toda Minas Gerais.
+                </p>
+<div class="flex gap-4">
+<button class="bg-tertiary-fixed text-on-tertiary-fixed px-8 py-4 rounded-sm font-bold text-base transition-all hover:brightness-110">
+                        Conhecer Estrutura
+                    </button>
+<button class="bg-surface-container-highest text-primary px-8 py-4 rounded-sm font-bold text-base transition-all hover:bg-surface-container-highest/90">
+                        Solicitar Cotação
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Nossa Frota -->
+<section class="py-24 bg-surface overflow-hidden">
+<div class="container mx-auto px-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-5">
+<h2 class="text-primary text-4xl md:text-5xl font-headline font-bold tracking-tight mb-8">Nossa Frota</h2>
+<p class="text-secondary text-lg mb-8 leading-relaxed">
+                        Diferente de modelos de terceirização instáveis, operamos com <span class="text-primary font-bold">frota 100% própria</span>. Nossos veículos são submetidos a rigorosos protocolos de manutenção e higienização, atendendo aos mais altos padrões para o transporte de alimentos e produtos de limpeza.
+                    </p>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-tertiary-fixed bg-primary p-2 rounded-sm" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+<div>
+<h4 class="font-bold text-primary">Veículos Novos</h4>
+<p class="text-secondary text-sm">Renovação constante para evitar quebras e atrasos.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-tertiary-fixed bg-primary p-2 rounded-sm" style="font-variation-settings: 'FILL' 1;">sanitizer</span>
+<div>
+<h4 class="font-bold text-primary">Higienização Padrão Industrial</h4>
+<p class="text-secondary text-sm">Controle sanitário rigoroso para segurança alimentar.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-7 relative">
+<div class="bg-surface-container-low p-4 rounded-lg">
+<img alt="Professional truck fleet in warehouse" class="w-full aspect-video object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-700" data-alt="Row of professional delivery trucks at a loading dock" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_kcJud3GaTU5pYybRWYjiexmSkvQUB7g2HwcY7YqSblB42U24s1wbEsJR6aBkI3nBIcatillR8JCMk2Cp-P0wuB8qYmQmsF1p0afdcfQw_zSl_U8KvEm2zozLy4bpFz17e2tmkmOT26x9Fe19jAyDyBb1x8-tsuVgZW-KkIOhCCvxQVNZ2h68QwkCQ9_6eyXuChgQwINR_uPBTGWc8sVrDqikMyewPn7wGxr7l7QE7LU4r2cB71gndPuKWChURh3Pm9KSjiO7ALc"/>
+</div>
+<div class="absolute -bottom-10 -left-10 bg-primary p-8 text-white hidden md:block">
+<div class="text-5xl font-black text-tertiary-fixed">150+</div>
+<div class="font-label text-xs uppercase tracking-widest opacity-70">Veículos em operação</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Tecnologia e Rastreio (Bento Grid) -->
+<section class="py-24 bg-primary-container text-white">
+<div class="container mx-auto px-12">
+<div class="mb-16">
+<h2 class="text-4xl font-headline font-bold mb-4">Tecnologia e Rastreio</h2>
+<div class="h-1 w-24 bg-tertiary-fixed"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Main Tech Card -->
+<div class="md:col-span-2 bg-primary p-10 flex flex-col justify-between border-l-4 border-tertiary-fixed">
+<div>
+<span class="material-symbols-outlined text-tertiary-fixed text-4xl mb-6">satellite_alt</span>
+<h3 class="text-2xl font-bold mb-4">Monitoramento Satelital 24h</h3>
+<p class="text-on-primary-container text-lg leading-relaxed max-w-xl">
+                            Nossa central de inteligência rastreia cada veículo em tempo real. Segurança total para sua carga e previsibilidade absoluta para sua recepção de mercadorias.
+                        </p>
+</div>
+<div class="mt-12 flex gap-8">
+<div>
+<span class="block text-3xl font-bold text-white">0%</span>
+<span class="text-xs font-label uppercase text-on-primary-container">Extravios</span>
+</div>
+<div>
+<span class="block text-3xl font-bold text-white">100%</span>
+<span class="text-xs font-label uppercase text-on-primary-container">Visibilidade</span>
+</div>
+</div>
+</div>
+<!-- Secondary Cards -->
+<div class="bg-surface-container-highest p-8 text-primary">
+<span class="material-symbols-outlined text-primary text-3xl mb-6">route</span>
+<h3 class="text-xl font-bold mb-3">Roteirização Inteligente</h3>
+<p class="text-sm opacity-80 leading-relaxed">
+                        Algoritmos avançados calculam as melhores rotas para garantir prazos curtos mesmo em áreas de difícil acesso.
+                    </p>
+</div>
+<div class="bg-surface-container-highest p-8 text-primary">
+<span class="material-symbols-outlined text-primary text-3xl mb-6">inventory_2</span>
+<h3 class="text-xl font-bold mb-3">Sistema WMS</h3>
+<p class="text-sm opacity-80 leading-relaxed">
+                        Gestão de armazém de alta precisão que integra estoque e expedição sem margem para erros humanos.
+                    </p>
+</div>
+<div class="md:col-span-3 bg-tertiary-fixed p-6 flex items-center justify-between">
+<span class="text-on-tertiary-fixed font-bold flex items-center gap-2">
+<span class="material-symbols-outlined">bolt</span> 
+                        Eficiência operacional elevada ao padrão industrial.
+                    </span>
+<span class="text-on-tertiary-fixed font-label text-xs font-bold uppercase tracking-widest">Tecnologia MultMix</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Presença Regional -->
+<section class="py-24 bg-surface">
+<div class="container mx-auto px-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div>
+<img alt="Regional map distribution" class="w-full aspect-square object-cover grayscale" data-alt="Abstract aerial view of transportation network lines" data-location="Minas Gerais" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvhvY6B5suzLNSp2lUH7zRw8ljNDCWHR1xMg4aafN8budBTxev4b8ApXSJ-Rvk4B1Wfd_JQVh5wHAaXzm6QvGEFjsRPUBkY7Ro9iaGQF5d5BftOQSfIeKO7mJgLlgsNtO-B5cDyRaJcPp-hHLK7k88jwJYtDNZoechqyQZErJqCUUWedCywpHLIL95U0_19PfuRcxtEN4OQOaWSLVJP610miQDzvNQH2D6UIO094QaIRiNpVEarkCEmyHUu4NONkNjglyQ5i4X-8w"/>
+</div>
+<div>
+<h2 class="text-primary text-4xl font-headline font-bold mb-8">Presença Regional em MG</h2>
+<p class="text-secondary text-lg mb-10 leading-relaxed">
+                        Nossa malha logística cobre as 6 principais regiões mineiras com centros de distribuição estrategicamente localizados para reduzir o tempo de resposta.
+                    </p>
+<div class="grid grid-cols-2 gap-y-8 gap-x-12">
+<div class="border-l-2 border-outline-variant pl-4">
+<span class="text-primary font-bold block">Triângulo Mineiro</span>
+<span class="text-xs text-secondary font-label uppercase">SLA: 24h/48h</span>
+</div>
+<div class="border-l-2 border-outline-variant pl-4">
+<span class="text-primary font-bold block">Sul de Minas</span>
+<span class="text-xs text-secondary font-label uppercase">SLA: 24h</span>
+</div>
+<div class="border-l-2 border-outline-variant pl-4">
+<span class="text-primary font-bold block">Zona da Mata</span>
+<span class="text-xs text-secondary font-label uppercase">SLA: 48h</span>
+</div>
+<div class="border-l-2 border-outline-variant pl-4">
+<span class="text-primary font-bold block">Região Central</span>
+<span class="text-xs text-secondary font-label uppercase">SLA: 12h/24h</span>
+</div>
+<div class="border-l-2 border-outline-variant pl-4">
+<span class="text-primary font-bold block">Norte de Minas</span>
+<span class="text-xs text-secondary font-label uppercase">SLA: 72h</span>
+</div>
+<div class="border-l-2 border-outline-variant pl-4">
+<span class="text-primary font-bold block">Vale do Aço</span>
+<span class="text-xs text-secondary font-label uppercase">SLA: 24h</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Diferenciais Operacionais -->
+<section class="py-24 bg-surface-container-low">
+<div class="container mx-auto px-12">
+<div class="text-center max-w-2xl mx-auto mb-20">
+<h2 class="text-primary text-4xl font-headline font-bold mb-4">Diferenciais Operacionais</h2>
+<p class="text-secondary">Excelência no manuseio e eficiência em cada etapa do processo.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="bg-white p-10 rounded-sm shadow-sm hover:shadow-xl transition-shadow duration-300">
+<div class="w-12 h-12 bg-primary text-tertiary-fixed flex items-center justify-center mb-8">
+<span class="material-symbols-outlined">precision_manufacturing</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-4">Eficiência de Carga</h3>
+<p class="text-secondary text-sm leading-relaxed">
+                        Técnicas de carregamento otimizadas que garantem a estabilidade da carga e máxima agilidade na descarga no PDV.
+                    </p>
+</div>
+<div class="bg-white p-10 rounded-sm shadow-sm hover:shadow-xl transition-shadow duration-300">
+<div class="w-12 h-12 bg-primary text-tertiary-fixed flex items-center justify-center mb-8">
+<span class="material-symbols-outlined">package_2</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-4">Manuseio Cuidadoso</h3>
+<p class="text-secondary text-sm leading-relaxed">
+                        Equipe treinada para o transporte de itens frágeis, evitando quebras e perdas financeiras para sua indústria.
+                    </p>
+</div>
+<div class="bg-white p-10 rounded-sm shadow-sm hover:shadow-xl transition-shadow duration-300">
+<div class="w-12 h-12 bg-primary text-tertiary-fixed flex items-center justify-center mb-8">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-4">Equipe Especializada</h3>
+<p class="text-secondary text-sm leading-relaxed">
+                        Motoristas e ajudantes em constante treinamento em segurança, atendimento e logística de ponta.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Final -->
+<section class="py-24 bg-primary relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<div class="absolute top-0 right-0 w-1/2 h-full bg-tertiary-fixed rotate-12 translate-x-1/2"></div>
+</div>
+<div class="container mx-auto px-12 relative z-10 text-center">
+<h2 class="text-white text-4xl md:text-5xl font-headline font-black mb-6">Sua indústria merece a melhor distribuição.</h2>
+<p class="text-on-primary-container text-xl mb-12 max-w-2xl mx-auto">Fale agora com nossos consultores e descubra como podemos escalar sua presença em Minas Gerais.</p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<a class="bg-tertiary-fixed text-on-tertiary-fixed px-10 py-5 rounded-sm font-bold text-lg flex items-center justify-center gap-3 hover:brightness-110 transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                    WhatsApp Comercial
+                </a>
+<a class="bg-white text-primary px-10 py-5 rounded-sm font-bold text-lg flex items-center justify-center gap-3 hover:bg-surface-dim transition-all" href="#">
+<span class="material-symbols-outlined">mail</span>
+                    E-mail Institucional
+                </a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-950 dark:bg-slate-950 w-full pt-20 pb-10 px-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 w-full max-w-screen-2xl mx-auto border-t border-white/5 pt-12">
+<div>
+<div class="text-xl font-bold text-white mb-6">MultMix</div>
+<p class="text-slate-400 font-body text-sm leading-relaxed">
+                    Distribuidora líder em Minas Gerais, focada em escala industrial e excelência logística.
+                </p>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Navegação</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-400 hover:text-lime-400 transition-colors text-xs uppercase tracking-widest font-['Work_Sans']" href="#">Sobre</a></li>
+<li><a class="text-lime-400 font-bold text-xs uppercase tracking-widest font-['Work_Sans']" href="#">Estrutura</a></li>
+<li><a class="text-slate-400 hover:text-lime-400 transition-colors text-xs uppercase tracking-widest font-['Work_Sans']" href="#">Regiões</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-400 hover:text-lime-400 transition-colors text-xs uppercase tracking-widest font-['Work_Sans']" href="#">Privacidade</a></li>
+<li><a class="text-slate-400 hover:text-lime-400 transition-colors text-xs uppercase tracking-widest font-['Work_Sans']" href="#">Termos de Uso</a></li>
+<li><a class="text-slate-400 hover:text-lime-400 transition-colors text-xs uppercase tracking-widest font-['Work_Sans']" href="#">Compliance</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Fale Conosco</h4>
+<p class="text-slate-400 text-xs uppercase tracking-widest font-['Work_Sans'] mb-2">SAC: 0800 123 4567</p>
+<p class="text-slate-400 text-xs uppercase tracking-widest font-['Work_Sans']">comercial@multmix.com.br</p>
+</div>
+</div>
+<div class="w-full max-w-screen-2xl mx-auto mt-20 pt-8 border-t border-white/5 text-center">
+<p class="font-['Work_Sans'] text-xs uppercase tracking-widest text-slate-500">© 2024 MultMix Distribuidora. Excelência em Logística e Escala Industrial.</p>
+</div>
+</footer>
+</body></html>
+
+
+

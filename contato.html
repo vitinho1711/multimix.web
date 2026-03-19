@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contato e Localização | MultMix Distribuidora</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Work_Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-container": "#768dad",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#bcc7dd",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#001c37",
+                        "on-background": "#1b1b22",
+                        "inverse-on-surface": "#f2effa",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-container": "#689a00",
+                        "surface-container-high": "#e9e7f1",
+                        "primary-container": "#0a2540",
+                        "outline-variant": "#c4c6ce",
+                        "on-surface": "#1b1b22",
+                        "on-tertiary-fixed": "#121f00",
+                        "on-primary-fixed-variant": "#314865",
+                        "tertiary": "#091200",
+                        "primary-fixed": "#d2e4ff",
+                        "background": "#fbf8ff",
+                        "on-secondary-container": "#586377",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e3e1ec",
+                        "error": "#ba1a1a",
+                        "surface-container": "#efecf7",
+                        "surface-container-low": "#f5f2fd",
+                        "primary-fixed-dim": "#b0c8eb",
+                        "outline": "#74777e",
+                        "primary": "#000f22",
+                        "on-error": "#ffffff",
+                        "surface-tint": "#49607e",
+                        "secondary-fixed": "#d8e3fa",
+                        "surface-container-highest": "#e3e1ec",
+                        "secondary": "#545f72",
+                        "surface-dim": "#dbd9e3",
+                        "on-tertiary-fixed-variant": "#334f00",
+                        "tertiary-container": "#192900",
+                        "on-secondary-fixed": "#111c2c",
+                        "surface-bright": "#fbf8ff",
+                        "surface": "#fbf8ff",
+                        "tertiary-fixed": "#b3f741",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#43474d",
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "inverse-surface": "#303038",
+                        "tertiary-fixed-dim": "#98d920",
+                        "secondary-container": "#d5e0f7",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#b0c8eb"
+                    },
+                    fontFamily: {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Work Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-header {
+            background: rgba(0, 15, 34, 0.85);
+            backdrop-filter: blur(16px);
+        }
+        .asymmetric-hero {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl border-b border-slate-200/50 dark:border-slate-800/50 shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<a href="index.html" class="flex items-center shrink-0"><img src="logo.png" alt="MultMix Distribuidora" class="h-12 md:h-14 w-auto object-contain"></a>
+<div class="hidden md:flex items-center gap-4 lg:gap-8 font-sans tracking-tight font-medium text-sm flex-wrap">
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="index.html">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="sobre.html">Sobre</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="categorias.html">Categorias</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="marcas_parceiras.html">Parceiros</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="logistica.html">Logística</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="contato.html">Contato</a>
+</div>
+<a href="trabalhe_conosco.html" class="bg-tertiary-fixed text-on-tertiary-fixed px-6 py-2.5 text-sm font-bold rounded-sm hover:opacity-90 transition-all active:scale-[0.99] ml-4 shrink-0 overflow-hidden text-center">Trabalhe Conosco</a>
+</div>
+</nav>
+<!-- Contact Hero -->
+<header class="relative bg-primary overflow-hidden pt-20 pb-32 asymmetric-hero">
+<div class="absolute inset-0 opacity-20 pointer-events-none">
+<div class="absolute inset-0 bg-gradient-to-br from-primary via-primary-container to-primary"></div>
+</div>
+<div class="max-w-[1440px] mx-auto px-8 lg:px-12 relative z-10">
+<div class="max-w-4xl">
+<span class="inline-block px-4 py-1.5 rounded-full bg-primary-container text-tertiary-fixed font-label text-xs uppercase tracking-[0.2em] mb-6">Contato Corporativo</span>
+<h1 class="text-[3.5rem] leading-[1.1] font-black text-white tracking-tighter mb-8">
+                    Estamos Prontos para Atender Sua Indústria e Varejo
+                </h1>
+<p class="text-xl text-slate-300 max-w-2xl leading-relaxed">
+                    Infraestrutura de ponta e equipe especializada para garantir agilidade e proximidade em cada etapa do seu fornecimento comercial.
+                </p>
+</div>
+</div>
+</header>
+<!-- Contact Channels Bento Grid -->
+<section class="max-w-[1440px] mx-auto px-8 lg:px-12 -mt-16 relative z-20">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Channel Card: Phone -->
+<div class="bg-surface-container-lowest p-8 shadow-sm border-b-2 border-transparent hover:border-tertiary-fixed transition-all group">
+<div class="w-12 h-12 rounded-sm bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-tertiary-fixed">call</span>
+</div>
+<h3 class="font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Telefone Central</h3>
+<p class="text-lg font-bold text-primary tracking-tight">+55 (31) 3361-5032</p>
+</div>
+<!-- Channel Card: WhatsApp -->
+<div class="bg-surface-container-lowest p-8 shadow-sm border-b-2 border-transparent hover:border-tertiary-fixed transition-all group">
+<div class="w-12 h-12 rounded-sm bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-tertiary-fixed">chat</span>
+</div>
+<h3 class="font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">WhatsApp</h3>
+<p class="text-lg font-bold text-primary tracking-tight">+55 (31) 99129-7303</p>
+</div>
+<!-- Channel Card: Email -->
+<div class="bg-surface-container-lowest p-8 shadow-sm border-b-2 border-transparent hover:border-tertiary-fixed transition-all group">
+<div class="w-12 h-12 rounded-sm bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-tertiary-fixed">mail</span>
+</div>
+<h3 class="font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">E-mail Comercial</h3>
+<p class="text-sm font-bold text-primary break-all">recepcao@comercialmultmix.com.br</p>
+</div>
+<!-- Channel Card: Hours -->
+<div class="bg-surface-container-lowest p-8 shadow-sm border-b-2 border-transparent hover:border-tertiary-fixed transition-all group">
+<div class="w-12 h-12 rounded-sm bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-tertiary-fixed">schedule</span>
+</div>
+<h3 class="font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Atendimento</h3>
+<p class="text-lg font-bold text-primary tracking-tight">Seg a Sex, 08h às 18h</p>
+</div>
+</div>
+</section>
+<!-- Strategic Location & Form Section -->
+<section class="py-32 max-w-[1440px] mx-auto px-8 lg:px-12">
+<div class="grid lg:grid-cols-2 gap-24 items-start">
+<!-- Strategic Location Panel -->
+<div class="space-y-12">
+<div>
+<h2 class="text-[2.75rem] font-black text-primary tracking-tighter mb-6 leading-tight">Localização Estratégica em Minas Gerais</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">Nossa unidade central em Ribeirão das Neves permite uma logística fluida para todo o estado e regiões adjacentes.</p>
+</div>
+<div class="bg-surface-container-low p-8 rounded-sm">
+<div class="flex items-start gap-4 mb-8">
+<span class="material-symbols-outlined text-tertiary-fixed bg-primary p-2 rounded-sm">location_on</span>
+<div>
+<p class="text-primary font-bold text-lg">Unidade Minas Gerais</p>
+<p class="text-on-surface-variant">Av. B, nº 200, Bairro Liberdade</p>
+<p class="text-on-surface-variant">Ribeirão das Neves – MG</p>
+<p class="text-on-surface-variant">CEP: 33.822-720</p>
+</div>
+</div>
+<!-- Map Placeholder -->
+<div class="w-full aspect-video bg-surface-container-highest rounded-sm overflow-hidden relative grayscale hover:grayscale-0 transition-all duration-700">
+<img alt="Mapa de localização estratégica" class="w-full h-full object-cover opacity-60" data-alt="Mapa abstrato de alta qualidade mostrando localização urbana" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkmkP3aZ2yIdSCx5BG9v71YnLOqgabK0IvPIrsdvRBm0-ZOVwntqNHEfqTMULykDMmXhje9rFUQWYPfnHEMEgIDSY85xjmjQl70kC6ua0W34pMJu9BRtChtSnOFgi8XHratvCbc7VuyvL9HKHqJtlFdmDL5YrWdwv_AejCZcT3FMR9cOTMTq3jWRhw2hW_9R8cQRpt7q1L6rDbNkvU7t6oYl6-suaGYa_sXO01za1AJLURxQUHIHeAbpDFJan5yYWxdc3-pm7RUfg"/>
+<div class="absolute inset-0 bg-primary/10"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<div class="w-12 h-12 bg-tertiary-fixed rounded-full flex items-center justify-center animate-pulse shadow-2xl">
+<span class="material-symbols-outlined text-on-tertiary-fixed">stars</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Request Form Panel -->
+<div class="bg-surface-container-lowest p-10 lg:p-14 shadow-2xl shadow-primary-container/5 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-tertiary-fixed/10 -mr-16 -mt-16 rounded-full blur-3xl"></div>
+<h2 class="text-2xl font-black text-primary tracking-tight mb-8">Seja um Parceiro MultMix</h2>
+<form class="space-y-6">
+<div class="grid md:grid-cols-2 gap-6">
+<div class="space-y-1">
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold">Nome Completo</label>
+<input class="w-full bg-surface-container-low border-0 border-b-2 border-outline-variant/30 focus:border-tertiary-fixed focus:ring-0 px-0 py-3 transition-all placeholder:text-outline" placeholder="Ex: João Silva" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold">E-mail Corporativo</label>
+<input class="w-full bg-surface-container-low border-0 border-b-2 border-outline-variant/30 focus:border-tertiary-fixed focus:ring-0 px-0 py-3 transition-all placeholder:text-outline" placeholder="email@empresa.com.br" type="email"/>
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-6">
+<div class="space-y-1">
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold">Empresa</label>
+<input class="w-full bg-surface-container-low border-0 border-b-2 border-outline-variant/30 focus:border-tertiary-fixed focus:ring-0 px-0 py-3 transition-all placeholder:text-outline" placeholder="Nome da sua indústria" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold">Cidade</label>
+<input class="w-full bg-surface-container-low border-0 border-b-2 border-outline-variant/30 focus:border-tertiary-fixed focus:ring-0 px-0 py-3 transition-all placeholder:text-outline" placeholder="Ex: Belo Horizonte" type="text"/>
+</div>
+</div>
+<div class="space-y-1">
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold">Assunto</label>
+<select class="w-full bg-surface-container-low border-0 border-b-2 border-outline-variant/30 focus:border-tertiary-fixed focus:ring-0 px-0 py-3 transition-all">
+<option>Seja um Fornecedor</option>
+<option>Solicitar Orçamento</option>
+<option>Dúvidas Logísticas</option>
+<option>Outros</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold">Mensagem</label>
+<textarea class="w-full bg-surface-container-low border-0 border-b-2 border-outline-variant/30 focus:border-tertiary-fixed focus:ring-0 px-0 py-3 transition-all placeholder:text-outline resize-none" placeholder="Como podemos ajudar seu negócio?" rows="4"></textarea>
+</div>
+<button class="w-full bg-tertiary-fixed text-on-tertiary-fixed font-black uppercase tracking-widest py-5 hover:bg-tertiary-fixed-dim transition-all shadow-xl shadow-tertiary-fixed/20 flex items-center justify-center gap-3 group" type="submit">
+                        Enviar Solicitação
+                        <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Support FAQ Section -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-8 lg:px-12">
+<div class="flex flex-col lg:flex-row gap-16">
+<div class="lg:w-1/3">
+<span class="font-label text-xs font-bold text-tertiary-fixed-variant bg-tertiary-fixed/20 px-3 py-1 rounded-sm uppercase tracking-widest">Suporte Rápido</span>
+<h2 class="text-3xl font-black text-primary tracking-tighter mt-4 mb-6">Dúvidas Frequentes</h2>
+<p class="text-on-surface-variant leading-relaxed">Encontre respostas rápidas sobre nossos processos de cadastro e entrega.</p>
+</div>
+<div class="lg:w-2/3 grid gap-4">
+<!-- FAQ Items -->
+<div class="bg-surface-container-lowest p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+<div class="flex justify-between items-center group">
+<p class="font-bold text-primary tracking-tight">Qual o prazo médio de entrega para Minas Gerais?</p>
+<span class="material-symbols-outlined text-outline group-hover:text-tertiary-fixed transition-colors">add</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+<div class="flex justify-between items-center group">
+<p class="font-bold text-primary tracking-tight">Como realizar o cadastro da minha empresa?</p>
+<span class="material-symbols-outlined text-outline group-hover:text-tertiary-fixed transition-colors">add</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+<div class="flex justify-between items-center group">
+<p class="font-bold text-primary tracking-tight">Quais são os documentos necessários para ser um parceiro?</p>
+<span class="material-symbols-outlined text-outline group-hover:text-tertiary-fixed transition-colors">add</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+<div class="flex justify-between items-center group">
+<p class="font-bold text-primary tracking-tight">A MultMix atende outros estados fora de MG?</p>
+<span class="material-symbols-outlined text-outline group-hover:text-tertiary-fixed transition-colors">add</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- WhatsApp Floating Button -->
+<a class="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300" href="#">
+<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24">
+<path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.512-2.961-2.628-.086-.117-.718-.953-.718-1.815 0-.862.452-1.286.613-1.46.16-.174.354-.219.472-.219.118 0 .235.001.338.005.111.005.259-.042.404.308.144.347.498 1.217.541 1.304.044.087.073.188.014.304-.058.116-.088.188-.175.289-.087.101-.183.226-.261.303-.087.087-.177.181-.077.353.101.172.447.737.96 1.192.661.587 1.217.77 1.389.856.173.088.274.072.376-.045.101-.117.433-.506.55-.68.116-.174.232-.145.39-.087.159.058 1.012.477 1.185.564.174.088.29.13.332.202.043.073.043.42-.102.825z"></path>
+</svg>
+</a>
+<!-- Footer -->
+<footer class="bg-[#000f22] w-full border-t border-[#0a2540]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 w-full max-w-[1440px] mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-bold text-white mb-6">MultMix</div>
+<p class="text-slate-400 font-['Work_Sans'] text-sm leading-relaxed">Excelência em distribuição industrial e logística estratégica no coração de Minas Gerais.</p>
+</div>
+<div class="space-y-4">
+<h4 class="text-[#b3f741] font-bold uppercase tracking-widest text-xs mb-6">Links Rápidos</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-400 hover:text-white transition-colors font-['Work_Sans'] text-sm uppercase tracking-widest" href="#">Políticas de Privacidade</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors font-['Work_Sans'] text-sm uppercase tracking-widest" href="#">Termos de Uso</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors font-['Work_Sans'] text-sm uppercase tracking-widest" href="#">Compliance</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-[#b3f741] font-bold uppercase tracking-widest text-xs mb-6">Institucional</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-400 hover:text-white transition-colors font-['Work_Sans'] text-sm uppercase tracking-widest" href="#">Trabalhe Conosco</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors font-['Work_Sans'] text-sm uppercase tracking-widest" href="#">SAC</a></li>
+<li><a class="text-[#b3f741] font-bold font-['Work_Sans'] text-sm uppercase tracking-widest" href="#">Atendimento Comercial</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="text-[#b3f741] font-bold uppercase tracking-widest text-xs mb-6">Siga-nos</h4>
+<div class="flex gap-4">
+<div class="w-10 h-10 bg-[#0a2540] rounded-sm flex items-center justify-center text-white hover:bg-[#b3f741] hover:text-primary transition-all duration-300 cursor-pointer">
+<span class="material-symbols-outlined text-lg">share</span>
+</div>
+<div class="w-10 h-10 bg-[#0a2540] rounded-sm flex items-center justify-center text-white hover:bg-[#b3f741] hover:text-primary transition-all duration-300 cursor-pointer">
+<span class="material-symbols-outlined text-lg">public</span>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full border-t border-[#0a2540] py-8 text-center">
+<p class="text-slate-500 font-['Work_Sans'] text-[10px] uppercase tracking-[0.2em]">© 2024 MultMix Distribuidora. Todos os direitos reservados.</p>
+</div>
+</footer>
+</body></html>
+
+
+
