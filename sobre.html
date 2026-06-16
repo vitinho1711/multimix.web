@@ -82,22 +82,44 @@
 </head>
 <body class="bg-surface text-on-surface antialiased overflow-x-hidden">
 <!-- Top Navigation Bar -->
-<header class="fixed top-0 w-full z-50 bg-slate-50/80 backdrop-blur-lg shadow-sm">
-<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl border-b border-slate-200/50 dark:border-slate-800/50 shadow-sm">
-<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
-<a href="index.html" class="flex items-center shrink-0"><img src="logo.png" alt="MultMix Distribuidora" class="h-12 md:h-14 w-auto object-contain"></a>
-<div class="hidden md:flex items-center gap-4 lg:gap-8 font-sans tracking-tight font-medium text-sm flex-wrap">
-<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="index.html">Home</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="sobre.html">Sobre</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="categorias.html">Categorias</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="marcas_parceiras.html">Parceiros</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="logistica.html">Logística</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors" href="contato.html">Contato</a>
+<nav id="main-nav" class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl border-b border-slate-200/50 dark:border-slate-800/50 shadow-sm">
+<div class="flex justify-between items-center px-6 md:px-8 py-3 md:py-4 max-w-screen-2xl mx-auto border-none">
+  <!-- Logo -->
+  <a href="index.html" class="flex items-center shrink-0">
+    <img src="logo.png" alt="MultMix Distribuidora" class="h-10 md:h-12 w-auto object-contain">
+  </a>
+  <!-- Desktop Nav -->
+  <div class="hidden md:flex items-center gap-4 lg:gap-8 font-sans tracking-tight font-medium text-sm">
+    <a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors relative group" href="index.html">Home<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#98d920] group-hover:w-full transition-all duration-300"></span></a>
+    <a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors relative group" href="sobre.html">Sobre<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#98d920] group-hover:w-full transition-all duration-300"></span></a>
+    <a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors relative group" href="categorias.html">Categorias<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#98d920] group-hover:w-full transition-all duration-300"></span></a>
+    <a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors relative group" href="marcas_parceiras.html">Parceiros<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#98d920] group-hover:w-full transition-all duration-300"></span></a>
+    <a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors relative group" href="logistica.html">Logística<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#98d920] group-hover:w-full transition-all duration-300"></span></a>
+    <a class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white transition-colors relative group" href="contato.html">Contato<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#98d920] group-hover:w-full transition-all duration-300"></span></a>
+  </div>
+  <div class="flex items-center gap-3 border-none">
+    <a href="trabalhe_conosco.html" class="hidden md:inline-flex bg-tertiary-fixed text-on-tertiary-fixed px-5 py-2.5 text-sm font-bold rounded-sm hover:opacity-90 transition-all active:scale-[0.99] shrink-0">Trabalhe Conosco</a>
+    <!-- Hamburger (mobile) -->
+    <button id="menu-toggle" class="md:hidden flex flex-col gap-1.5 p-2 group border-none" aria-label="Menu">
+      <span class="block w-6 h-0.5 bg-slate-800 dark:bg-white transition-all duration-300 group-[.open]:rotate-45 group-[.open]:translate-y-2"></span>
+      <span class="block w-6 h-0.5 bg-slate-800 dark:bg-white transition-all duration-300 group-[.open]:opacity-0"></span>
+      <span class="block w-6 h-0.5 bg-slate-800 dark:bg-white transition-all duration-300 group-[.open]:-rotate-45 group-[.open]:-translate-y-2"></span>
+    </button>
+  </div>
 </div>
-<a href="trabalhe_conosco.html" class="bg-tertiary-fixed text-on-tertiary-fixed px-6 py-2.5 text-sm font-bold rounded-sm hover:opacity-90 transition-all active:scale-[0.99] ml-4 shrink-0 overflow-hidden text-center">Trabalhe Conosco</a>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="md:hidden bg-white dark:bg-slate-950 border-t border-slate-100 dark:border-slate-800">
+  <div class="px-6 py-4 flex flex-col gap-4 text-sm font-medium">
+    <a class="text-slate-700 dark:text-slate-300 hover:text-[#98d920] transition-colors py-1" href="index.html">Home</a>
+    <a class="text-slate-700 dark:text-slate-300 hover:text-[#98d920] transition-colors py-1" href="sobre.html">Sobre</a>
+    <a class="text-slate-700 dark:text-slate-300 hover:text-[#98d920] transition-colors py-1" href="categorias.html">Categorias</a>
+    <a class="text-slate-700 dark:text-slate-300 hover:text-[#98d920] transition-colors py-1" href="marcas_parceiras.html">Parceiros</a>
+    <a class="text-slate-700 dark:text-slate-300 hover:text-[#98d920] transition-colors py-1" href="logistica.html">Logística</a>
+    <a class="text-slate-700 dark:text-slate-300 hover:text-[#98d920] transition-colors py-1" href="contato.html">Contato</a>
+    <a href="trabalhe_conosco.html" class="bg-tertiary-fixed text-on-tertiary-fixed px-5 py-2.5 text-sm font-bold text-center rounded-sm mt-2">Trabalhe Conosco</a>
+  </div>
 </div>
 </nav>
-</header>
 <main class="pt-20">
 <!-- Hero Section -->
 <section class="relative h-[819px] flex items-center bg-primary overflow-hidden">
@@ -298,45 +320,80 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-slate-900 text-slate-400">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 w-full">
-<div class="col-span-1 md:col-span-1">
-<div class="text-lg font-bold text-white mb-6">MultMix</div>
-<p class="text-xs uppercase tracking-widest font-work-sans leading-relaxed">Excelência em Logística e Distribuição de alta performance para o varejo de Minas Gerais.</p>
+<footer class="bg-slate-950 dark:bg-black w-full pt-16 pb-12 border-t border-white/5">
+<div class="max-w-screen-2xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 text-slate-400 text-sm">
+  <div class="space-y-4">
+    <div class="text-xl font-bold text-white">MultMix</div>
+    <p class="text-xs uppercase tracking-widest font-sans leading-relaxed text-slate-500 font-label">Excelência em Logística e Distribuição de alta performance para o varejo de Minas Gerais.</p>
+  </div>
+  <div>
+    <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Navegação</h4>
+    <ul class="space-y-3 text-xs uppercase tracking-widest font-sans">
+      <li><a class="hover:text-lime-400 transition-colors" href="index.html">Home</a></li>
+      <li><a class="hover:text-lime-400 transition-colors" href="sobre.html">Sobre</a></li>
+      <li><a class="hover:text-lime-400 transition-colors" href="categorias.html">Categorias</a></li>
+      <li><a class="hover:text-lime-400 transition-colors" href="marcas_parceiras.html">Parceiros</a></li>
+      <li><a class="hover:text-lime-400 transition-colors" href="logistica.html">Logística</a></li>
+    </ul>
+  </div>
+  <div>
+    <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Contato</h4>
+    <ul class="space-y-3 text-xs uppercase tracking-widest font-sans">
+      <li><a class="hover:text-lime-400 transition-colors" href="contato.html">Fale Conosco</a></li>
+      <li><a class="hover:text-lime-400 transition-colors" href="trabalhe_conosco.html">Trabalhe Conosco</a></li>
+    </ul>
+  </div>
+  <div>
+    <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Endereço</h4>
+    <p class="text-xs leading-relaxed text-slate-400 font-sans">
+      Av. B, nº 200, Bairro Liberdade<br/>
+      Ribeirão das Neves - MG, CEP: 33.822-720
+    </p>
+  </div>
 </div>
-<div>
-<h4 class="text-lime-400 font-bold font-work-sans text-xs uppercase tracking-widest mb-6">Links Úteis</h4>
-<ul class="space-y-4 font-work-sans text-xs uppercase tracking-widest">
-<li><a class="hover:text-white transition-all hover:translate-x-1 inline-block" href="#">Privacidade</a></li>
-<li><a class="hover:text-white transition-all hover:translate-x-1 inline-block" href="#">Termos de Uso</a></li>
-<li><a class="hover:text-white transition-all hover:translate-x-1 inline-block" href="#">Trabalhe Conosco</a></li>
-</ul>
-</div>
-<div>
-<h4 class="text-lime-400 font-bold font-work-sans text-xs uppercase tracking-widest mb-6">Suporte</h4>
-<ul class="space-y-4 font-work-sans text-xs uppercase tracking-widest">
-<li><a class="hover:text-white transition-all hover:translate-x-1 inline-block" href="#">SAC 0800</a></li>
-<li><a class="hover:text-white transition-all hover:translate-x-1 inline-block" href="#">Canal de Denúncias</a></li>
-<li><a class="hover:text-white transition-all hover:translate-x-1 inline-block" href="#">Perguntas Frequentes</a></li>
-</ul>
-</div>
-<div>
-<h4 class="text-lime-400 font-bold font-work-sans text-xs uppercase tracking-widest mb-6">Endereço</h4>
-<p class="text-xs font-work-sans leading-relaxed">
-                    Setor Logístico Alpha, Galpão 01<br/>
-                    Contagem - MG, Brasil
-                </p>
-</div>
-</div>
-<div class="border-t border-slate-800 py-8 px-12 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="font-work-sans text-xs uppercase tracking-widest">© 2024 MultMix Distribuidora. Todos os direitos reservados.</p>
-<div class="flex gap-6">
-<span class="material-symbols-outlined text-xl cursor-pointer hover:text-lime-400 transition-colors" data-icon="facebook">social_leaderboard</span>
-<span class="material-symbols-outlined text-xl cursor-pointer hover:text-lime-400 transition-colors" data-icon="linked_camera">linked_camera</span>
-<span class="material-symbols-outlined text-xl cursor-pointer hover:text-lime-400 transition-colors" data-icon="group">group</span>
-</div>
+<div class="max-w-screen-2xl mx-auto px-6 md:px-8 pt-8 mt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-xs font-sans">
+  <p>© 2024 MultMix Distribuidora. Todos os direitos reservados.</p>
+  <div class="flex gap-6">
+    <a class="hover:text-white transition-colors" href="#">Privacidade</a>
+    <a class="hover:text-white transition-colors" href="#">Termos de Uso</a>
+    <a class="hover:text-white transition-colors" href="#">Compliance</a>
+  </div>
 </div>
 </footer>
+<script>
+// === NAVBAR SCROLL EFFECT ===
+const nav = document.getElementById('main-nav');
+if (nav) {
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+  }, { passive: true });
+}
+
+// === MOBILE MENU TOGGLE ===
+const menuToggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+if (menuToggle && mobileMenu) {
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+    menuToggle.classList.toggle('open');
+  });
+}
+
+// === SMOOTH SCROLL for anchors ===
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const href = a.getAttribute('href');
+    if (href.startsWith('#') && href.length > 1) {
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  });
+});
+</script>
+
 </body></html>
 
 
