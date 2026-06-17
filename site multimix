@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MultMix Distribuidora | Conectando a Indústria ao Varejo</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "primary-container": "#0a2540",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#192900",
+                        "primary": "#000f22",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#091200",
+                        "on-primary-fixed-variant": "#314865",
+                        "secondary": "#545f72",
+                        "on-primary-container": "#d0dff5",
+                        "secondary-fixed-dim": "#bcc7dd",
+                        "on-secondary-fixed": "#111c2c",
+                        "primary-fixed": "#d2e4ff",
+                        "on-tertiary-container": "#689a00",
+                        "on-background": "#121417",
+                        "on-surface": "#121417",
+                        "inverse-on-surface": "#f2effa",
+                        "background": "#fbf8ff",
+                        "on-surface-variant": "#2a2c30",
